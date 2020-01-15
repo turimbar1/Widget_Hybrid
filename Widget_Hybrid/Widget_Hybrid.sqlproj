@@ -175,6 +175,8 @@
     <None Include="Migrations\1.1.0-Changes\001_20200115-0936_andrew.pierce.sql" />
     <None Include="Migrations\1.1.0-Changes\002_20200115-1011_andrew.pierce.sql" />
     <None Include="Migrations\1.1.0-Changes\003_20200115-1012_andrew.pierce.sql" />
+    <None Include="Migrations\1.1.0-Changes\004_20200115-1250_andrew.pierce.sql" />
+    <None Include="Migrations\1.1.0-Changes\005_20200115-1326_andrew.pierce.sql" />
     <None Include="Pre-Deployment\01_Create_Database.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\GetBairdSector.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\GetContacts.sql" />
@@ -192,6 +194,7 @@
     <None Include="Programmable Objects\dbo\Stored Procedures\GetWidgetPurchases.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\GetWidgets.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_Account.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Get_CamptureOuputLog.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_Cust.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\GET_CUST_NOTES.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_Demo.sql" />

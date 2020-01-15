@@ -14,9 +14,7 @@ SELECT ValidFrom,
        CreditFlag,
        SecuritizedFlag,
        NonAgencyRmbsFlag,
-       ModifiedDurationFlag,
-       IsPartial,
-       MuniFlag
+       ModifiedDurationFlag
 FROM dbo.BairdSector;
 END
 
