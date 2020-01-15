@@ -1,0 +1,14 @@
+IF OBJECT_ID('[dbo].[GetPrices]') IS NOT NULL
+	DROP PROCEDURE [dbo].[GetPrices];
+
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[GetPrices] AS
+BEGIN
+SELECT * FROM dbo.WidgetPrices
+END
+
+GO

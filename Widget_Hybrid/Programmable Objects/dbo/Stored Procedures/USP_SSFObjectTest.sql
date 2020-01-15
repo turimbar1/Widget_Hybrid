@@ -1,0 +1,16 @@
+IF OBJECT_ID('[dbo].[USP_SSFObjectTest]') IS NOT NULL
+	DROP PROCEDURE [dbo].[USP_SSFObjectTest];
+
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[USP_SSFObjectTest] AS
+BEGIN
+SELECT ObjectID
+     , ObjectName
+      FROM  dbo.ObjectTest
+END
+
+GO

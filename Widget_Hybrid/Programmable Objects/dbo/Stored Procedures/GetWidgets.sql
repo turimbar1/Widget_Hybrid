@@ -1,0 +1,14 @@
+IF OBJECT_ID('[dbo].[GetWidgets]') IS NOT NULL
+	DROP PROCEDURE [dbo].[GetWidgets];
+
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[GetWidgets] AS
+BEGIN
+SELECT * FROM dbo.Widgets
+END
+
+GO

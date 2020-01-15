@@ -1,0 +1,2 @@
+IF OBJECT_ID('[dbo].[USP_SSFObjectTest2]') IS NOT NULL
+	DROP PROCEDURE [dbo].[USP_SSFObjectTest2];

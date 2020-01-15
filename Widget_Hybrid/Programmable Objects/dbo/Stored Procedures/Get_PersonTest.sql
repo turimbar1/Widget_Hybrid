@@ -1,0 +1,14 @@
+IF OBJECT_ID('[dbo].[Get_PersonTest]') IS NOT NULL
+	DROP PROCEDURE [dbo].[Get_PersonTest];
+
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[Get_PersonTest] AS
+BEGIN
+SELECT * FROM dbo.PersonTest
+END
+
+GO

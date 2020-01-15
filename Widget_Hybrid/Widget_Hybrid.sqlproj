@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Widget_Hybrid</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>bb8951b0-06a8-4154-8037-f30cc652ca59</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Widget_Hybrid</RootNamespace>
+    <AssemblyName>Widget_Hybrid</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeSchemaNameInFileName>True</IncludeSchemaNameInFileName>
+    <IsSqlChangeAutomationProject>True</IsSqlChangeAutomationProject>
+    <MinimumEngineVersion>1.17.18144</MinimumEngineVersion>
+    <SqlChangeAutomationSchemaVersion>1.12</SqlChangeAutomationSchemaVersion>
+    <DeployOnceSubFolder>Migrations</DeployOnceSubFolder>
+    <DeployChangesSubFolder>Programmable Objects</DeployChangesSubFolder>
+    <DeployChangesImportSchemaFolders>True</DeployChangesImportSchemaFolders>
+    <PreDeploymentSubFolder>Pre-Deployment</PreDeploymentSubFolder>
+    <PostDeploymentSubFolder>Post-Deployment</PostDeploymentSubFolder>
+    <GenerateSqlPackage>False</GenerateSqlPackage>
+    <MigrationOrdering>FilePath</MigrationOrdering>
+    <EvaluateExecutionOrderOnImport>True</EvaluateExecutionOrderOnImport>
+    <Baselining>FolderBased</Baselining>
+    <DevelopmentSource>ScriptsFolder</DevelopmentSource>
+    <ScriptsFolderPath>..\..\..\Users\andrew.pierce\Documents\src\</ScriptsFolderPath>
+  </PropertyGroup>
+  <!-- SQL CHANGE AUTOMATION OFFLINE SCHEMA MODEL OPTIONS -->
+  <PropertyGroup>
+    <SyncToOfflineSchemaModel>True</SyncToOfflineSchemaModel>
+    <!--
+    <SyncToOfflineSchemaModelBySchema>True</SyncToOfflineSchemaModelBySchema>
+    <SyncToOfflineSchemaModelObjectTypes>Table;Assembly;Contract;Default;EventNotification;FullTextCatalog;FullTextStoplist;MessageType;PartitionFunction;PartitionScheme;Queue;ServiceBinding;Role;Route;Rule;Schema;SearchPropertyList;Service;Sequence;Synonym;User;UserDefinedType;XmlSchemaCollection</SyncToOfflineSchemaModelObjectTypes>
+    <SchemaModelSubFolder>Schema-Model</SchemaModelSubFolder>
+    -->
+  </PropertyGroup>
+  <!-- SQL CHANGE AUTOMATION PROGRAMMABLE OBJECT OPTIONS -->
+  <PropertyGroup>
+    <DeployChangesForProgrammableObjects>True</DeployChangesForProgrammableObjects>
+    <!--
+    <DeployChangesForProgrammableObjects>True</DeployChangesForProgrammableObjects>
+    <DeployChangesInitialImportDone>False</DeployChangesInitialImportDone>
+    <DeployChangesImportObjectTypes>StoredProcedure;Function;View;DdlTrigger</DeployChangesImportObjectTypes>
+    <DeployChangesSubFolder>Deploy-Changes</DeployChangesSubFolder>
+    -->
+  </PropertyGroup>
+  <!-- SQL CHANGE AUTOMATION SCRIPT GENERATION OPTIONS -->
+  <PropertyGroup>
+    <!-- These properties might be set by the Developer -->
+    <!--
+    <SyncOptionIncludeDependentObjects>False</SyncOptionIncludeDependentObjects>
+    <SyncOptionIncludeExistenceChecks>False</SyncOptionIncludeExistenceChecks>
+    <SyncOptionUseDropCreateInsteadOfAlter>False</SyncOptionUseDropCreateInsteadOfAlter>
+    <SyncOptionDisableDdlTriggers>False</SyncOptionDisableDdlTriggers>
+    <SyncOptionCaseSensitiveObjectDefinition>False</SyncOptionCaseSensitiveObjectDefinition>
+
+    <SyncOptionIgnoreExtendedProperties>False</SyncOptionIgnoreExtendedProperties>
+    <SyncOptionIgnoreCommentsInBodies>False</SyncOptionIgnoreCommentsInBodies>
+    <SyncOptionIgnoreAnsiOptions>False</SyncOptionIgnoreAnsiOptions>
+    <SyncOptionIgnoreCollations>True</SyncOptionIgnoreCollations>
+    <SyncOptionIgnoreColumnsOrder>True</SyncOptionIgnoreColumnsOrder>
+    <SyncOptionIgnoreWhiteSpace>True</SyncOptionIgnoreWhiteSpace>
+    <SyncOptionIgnoreSynonymDatabaseAndServerName>True</SyncOptionIgnoreSynonymDatabaseAndServerName>
+    <SyncOptionIgnoretSQLt>True</SyncOptionIgnoretSQLt>
+    <SyncOptionIgnoreDmlTriggers>False</SyncOptionIgnoreDmlTriggers>
+    <SyncOptionIgnoreInsteadOfTriggers>False</SyncOptionIgnoreInsteadOfTriggers>
+    <SyncOptionIgnoreBindings>False</SyncOptionIgnoreBindings>
+    <SyncOptionIgnoreQueueEventNotifications>False</SyncOptionIgnoreQueueEventNotifications>
+    <SyncOptionIgnoreSquareBrackets>False</SyncOptionIgnoreSquareBrackets>
+    <SyncOptionIgnoreWithElementOrder>True</SyncOptionIgnoreWithElementOrder>
+    <SyncOptionIgnoreWithEncryption>False</SyncOptionIgnoreWithEncryption>
+    -->
+    <!-- These properties might be set by the DBA -->
+    <!--
+    <SyncOptionIgnoreDataspaces>True</SyncOptionIgnoreDataspaces>
+    <SyncOptionIgnoreConstraintNotForReplicationAttribute>True</SyncOptionIgnoreConstraintNotForReplicationAttribute>
+    <SyncOptionIgnoreFillFactor>True</SyncOptionIgnoreFillFactor>
+    <SyncOptionIgnoreIndexLockAttributes>False</SyncOptionIgnoreIndexLockAttributes>
+    <SyncOptionIgnoreStatistics>True</SyncOptionIgnoreStatistics>
+    <SyncOptionIgnoreDataCompression>True</SyncOptionIgnoreDataCompression>
+    <SyncOptionIgnoreFullTextIndexing>False</SyncOptionIgnoreFullTextIndexing>
+    <SyncOptionIgnoreReplicationTriggers>True</SyncOptionIgnoreReplicationTriggers>
+    <SyncOptionIgnoreSchemaObjectAuthorization>False</SyncOptionIgnoreSchemaObjectAuthorization>
+    <SyncOptionIgnoreStatisticsNorecompute>False</SyncOptionIgnoreStatisticsNorecompute>
+    <SyncOptionConsiderNextFilegroupInPartitionSchemes>False</SyncOptionConsiderNextFilegroupInPartitionSchemes>
+    -->
+    <!-- Shared Developer/DBA options -->
+    <!--
+    <SyncOptionIgnoreIndexes>False</SyncOptionIgnoreIndexes>
+    <SyncOptionIgnorePermissions>False</SyncOptionIgnorePermissions>
+    <SyncOptionIgnoreConstraintWithNoCheckAttribute>True</SyncOptionIgnoreConstraintWithNoCheckAttribute>
+    <SyncOptionIgnoreNocheckAndWithNocheckAttributes>False</SyncOptionIgnoreNocheckAndWithNocheckAttributes>
+    <SyncOptionIgnoreIdentitySeedAndIncrement>False</SyncOptionIgnoreIdentitySeedAndIncrement>
+    <SyncOptionIgnoreUserProperties>True</SyncOptionIgnoreUserProperties>
+    <SyncOptionIgnoreUsersPermissionsAndRoleMemberships>False</SyncOptionIgnoreUsersPermissionsAndRoleMemberships>
+    <SyncOptionAddWithEncryption>False</SyncOptionAddWithEncryption>
+    <SyncOptionDecryptEncryptedObjects>True</SyncOptionDecryptEncryptedObjects>
+    <SyncOptionUseCompatibilityLevel>False</SyncOptionUseCompatibilityLevel>
+    -->
+    <!-- Data comparison/sync options -->
+    <!--
+    <SyncDataOptionDropKeysIndexesAndConstraints>False</SyncDataOptionDropKeysIndexesAndConstraints>
+    <SyncDataOptionDisableForeignKeys>False</SyncDataOptionDisableForeignKeys>
+    <SyncDataOptionIncludeTimestampColumns>False</SyncDataOptionIncludeTimestampColumns>
+    <SyncDataOptionCaseSensitiveObjectDefinition>True</SyncDataOptionCaseSensitiveObjectDefinition>
+    <SyncDataOptionForceBinaryCollation>True</SyncDataOptionForceBinaryCollation>
+    <SyncDataOptionTrimTrailingSpaces>False</SyncDataOptionTrimTrailingSpaces>
+    <SyncDataOptionDisableDmlTriggers>False</SyncDataOptionDisableDmlTriggers>
+    <SyncDataOptionDisableDdlTriggers>True</SyncDataOptionDisableDdlTriggers>
+    <SyncDataOptionDontIncludeCommentsInScript>False</SyncDataOptionDontIncludeCommentsInScript>
+    <SyncDataOptionReseedIdentityColumns>False</SyncDataOptionReseedIdentityColumns>
+    <SyncDataOptionSkipIntegrityChecksForForeignKeys>False</SyncDataOptionSkipIntegrityChecksForForeignKeys>
+    <SyncDataOptionTransportClrDataTypesAsBinary>False</SyncDataOptionTransportClrDataTypesAsBinary>
+    <SyncDataOptionCompressTemporaryFiles>False</SyncDataOptionCompressTemporaryFiles>
+    <SyncDataOptionTreatEmptyStringAsNull>False</SyncDataOptionTreatEmptyStringAsNull>
+    <SyncDataOptionUseChecksumComparison>False</SyncDataOptionUseChecksumComparison>
+    <SyncDataOptionUseMaxPrecisionForFloatComparison>False</SyncDataOptionUseMaxPrecisionForFloatComparison>
+    -->
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!--Import the settings-->
+  <PropertyGroup>
+    <AppDataPath>$(LOCALAPPDATA)</AppDataPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(AppDataPath)==''">
+    <AppDataPath>$(APPDATA)</AppDataPath>
+  </PropertyGroup>
+  <Import Condition="Exists('$(SqlChangeAutomationTargetsPath)')" Project="$(SqlChangeAutomationTargetsPath)" />
+  <Import Condition="!Exists('$(SqlChangeAutomationTargetsPath)')" Project="$(MSBuildExtensionsPath)\SqlChangeAutomation\SqlChangeAutomation.Data.Schema.Ssdt.targets" />
+  <ItemGroup>
+    <Folder Include="Migrations\1.0.0-Baseline" />
+    <Folder Include="Migrations\1.1.0-Changes" />
+    <Folder Include="Properties\" />
+    <Folder Include="Pre-Deployment\" />
+    <Folder Include="Post-Deployment\" />
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Filter.scpf" />
+    <None Include="Migrations\1.0.0-Baseline\001_20200115-0934_andrew.pierce.sql" />
+    <None Include="Migrations\1.1.0-Changes\001_20200115-0936_andrew.pierce.sql" />
+    <None Include="Migrations\1.1.0-Changes\002_20200115-1011_andrew.pierce.sql" />
+    <None Include="Migrations\1.1.0-Changes\003_20200115-1012_andrew.pierce.sql" />
+    <None Include="Pre-Deployment\01_Create_Database.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\GetBairdSector.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\GetContacts.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\GetCustomerNotes.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\GetCutomer.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\GetDemo.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\GetEmpAudit.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\GetInvoice.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\GetNotes.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\GetPrices.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\GetRef.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\GetReferences.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\GetSuppliers.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\GetTable.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\GetWidgetPurchases.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\GetWidgets.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Get_Account.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Get_Cust.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\GET_CUST_NOTES.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Get_Demo.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\GET_DM_INVOICE_LINE.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Get_LINE_HISTORY.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Get_PersonTest.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Get_Sector.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\SSF_USP_DemoTable.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\USP_getContacts.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\USP_GetDemoTest.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\USP_GetObject.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\USP_GetProject.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\usp_GetPurchase.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\USP_GetPurchases.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\usp_GetTestObject.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\USP_ObjectTestSel.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\USP_SSFObjectTest.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\USP_SSFObjectTest2.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\USP_SSFPersonTestRename.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\usp_SSFPurchases.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\USP_SSFTestResults.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\USP_SSFWidgets.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\USP_SSF_CUSTOMERS.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\USP_SSF_DemoTable.sql" />
+    <None Include="Programmable Objects\dbo\Views\WidgetPriceList.sql" />
+    <None Include="Schema-Model\dbo\Tables\Account.sql" />
+    <None Include="Schema-Model\dbo\Tables\Account_FF.sql" />
+    <None Include="Schema-Model\dbo\Tables\BairdSector.sql" />
+    <None Include="Schema-Model\dbo\Tables\Contacts.sql" />
+    <None Include="Schema-Model\dbo\Tables\Customer.sql" />
+    <None Include="Schema-Model\dbo\Tables\customersDemo.sql" />
+    <None Include="Schema-Model\dbo\Tables\demotable.sql" />
+    <None Include="Schema-Model\dbo\Tables\DemoTable1.sql" />
+    <None Include="Schema-Model\dbo\Tables\DemoTest2.sql" />
+    <None Include="Schema-Model\dbo\Tables\DMS_AUDITTAB.sql" />
+    <None Include="Schema-Model\dbo\Tables\DM_ASSIGNMENT.sql" />
+    <None Include="Schema-Model\dbo\Tables\DM_CREDIT_CARD_TYPE.sql" />
+    <None Include="Schema-Model\dbo\Tables\DM_CUSTOMER.sql" />
+    <None Include="Schema-Model\dbo\Tables\DM_CUSTOMER_ASXML_IDAttr.sql" />
+    <None Include="Schema-Model\dbo\Tables\DM_CUSTOMER_CONTACTS.sql" />
+    <None Include="Schema-Model\dbo\Tables\DM_CUSTOMER_NOTES.sql" />
+    <None Include="Schema-Model\dbo\Tables\DM_EMPLOYEE.sql" />
+    <None Include="Schema-Model\dbo\Tables\DM_EMP_AUDIT.sql" />
+    <None Include="Schema-Model\dbo\Tables\DM_INVENTORY_ITEM.sql" />
+    <None Include="Schema-Model\dbo\Tables\DM_INVOICE.sql" />
+    <None Include="Schema-Model\dbo\Tables\DM_INVOICE_LINE.sql" />
+    <None Include="Schema-Model\dbo\Tables\DM_INVOICE_LINE_HISTORY.sql" />
+    <None Include="Schema-Model\dbo\Tables\DM_SUPPLIERS.sql" />
+    <None Include="Schema-Model\dbo\Tables\HelloDemo.sql" />
+    <None Include="Schema-Model\dbo\Tables\HelloWorld.sql" />
+    <None Include="Schema-Model\dbo\Tables\ObjectTest.sql" />
+    <None Include="Schema-Model\dbo\Tables\PersonTest.sql" />
+    <None Include="Schema-Model\dbo\Tables\project.sql" />
+    <None Include="Schema-Model\dbo\Tables\TestTable.sql" />
+    <None Include="Schema-Model\dbo\Tables\TestTable1.sql" />
+    <None Include="Schema-Model\dbo\Tables\WidgetDescriptions.sql" />
+    <None Include="Schema-Model\dbo\Tables\WidgetPrices.sql" />
+    <None Include="Schema-Model\dbo\Tables\WidgetPurchases.sql" />
+    <None Include="Schema-Model\dbo\Tables\WidgetReferences.sql" />
+    <None Include="Schema-Model\dbo\Tables\Widgets.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Post-Deployment\01_Finalize_Deployment.sql" />
+  </ItemGroup>
+</Project>
