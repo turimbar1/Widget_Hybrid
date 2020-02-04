@@ -8,7 +8,7 @@ SET ANSI_NULLS ON
 GO
 CREATE PROCEDURE [dbo].[GetRef] AS
 BEGIN
-SELECT * FROM dbo.WidgetReferences
+SELECT  Reference FROM dbo.WidgetReferences
 END
 
 GO

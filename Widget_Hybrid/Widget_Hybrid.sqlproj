@@ -177,6 +177,7 @@
     <None Include="Migrations\1.1.0-Changes\003_20200115-1012_andrew.pierce.sql" />
     <None Include="Migrations\1.1.0-Changes\004_20200115-1250_andrew.pierce.sql" />
     <None Include="Migrations\1.1.0-Changes\005_20200115-1326_andrew.pierce.sql" />
+    <None Include="Migrations\1.1.0-Changes\006_20200204-1139_andrew.pierce.sql" />
     <None Include="Pre-Deployment\01_Create_Database.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\GetBairdSector.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\GetContacts.sql" />
@@ -196,12 +197,17 @@
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_Account.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_CamptureOuputLog.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_Cust.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Get_Customer.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\GET_CUST_NOTES.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_Demo.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\GET_DM_INVOICE_LINE.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_LINE_HISTORY.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_PersonTest.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_Sector.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Get_Sector_Validity.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Get_TestMessage.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Get_TranResult.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\SSF_USP_DemoTable.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\SSF_USP_DemoTable.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\USP_getContacts.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\USP_GetDemoTest.sql" />

@@ -1,0 +1,14 @@
+IF OBJECT_ID('[dbo].[Get_TestMessage]') IS NOT NULL
+	DROP PROCEDURE [dbo].[Get_TestMessage];
+
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[Get_TestMessage] AS
+BEGIN
+SELECT Msg FROM tSQLt.TestMessage
+END
+
+GO
