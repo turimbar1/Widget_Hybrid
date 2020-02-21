@@ -178,6 +178,7 @@
     <None Include="Migrations\1.1.0-Changes\004_20200115-1250_andrew.pierce.sql" />
     <None Include="Migrations\1.1.0-Changes\005_20200115-1326_andrew.pierce.sql" />
     <None Include="Migrations\1.1.0-Changes\006_20200204-1139_andrew.pierce.sql" />
+    <None Include="Migrations\1.1.0-Changes\007_20200221-1230_andrew.pierce.sql" />
     <None Include="Pre-Deployment\01_Create_Database.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\GetBairdSector.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\GetContacts.sql" />
@@ -201,12 +202,15 @@
     <None Include="Programmable Objects\dbo\Stored Procedures\GET_CUST_NOTES.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_Demo.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\GET_DM_INVOICE_LINE.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Get_Employee_Assignment.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Get_Inventory_Item_Name.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_LINE_HISTORY.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_PersonTest.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_Sector.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_Sector_Validity.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_TestMessage.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_TranResult.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Get_Widg_Ref.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\SSF_USP_DemoTable.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\SSF_USP_DemoTable.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\USP_getContacts.sql" />
