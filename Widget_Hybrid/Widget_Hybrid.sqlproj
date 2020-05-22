@@ -164,6 +164,7 @@
   <ItemGroup>
     <Folder Include="Migrations\1.0.0-Baseline" />
     <Folder Include="Migrations\1.1.0-Changes" />
+    <Folder Include="Migrations\1.1.1" />
     <Folder Include="Properties\" />
     <Folder Include="Pre-Deployment\" />
     <Folder Include="Post-Deployment\" />
@@ -179,6 +180,8 @@
     <None Include="Migrations\1.1.0-Changes\005_20200115-1326_andrew.pierce.sql" />
     <None Include="Migrations\1.1.0-Changes\006_20200204-1139_andrew.pierce.sql" />
     <None Include="Migrations\1.1.0-Changes\007_20200221-1230_andrew.pierce.sql" />
+    <None Include="Migrations\1.1.1\001_20200221-1259_andrew.pierce.sql" />
+    <None Include="Migrations\1.1.1\002_20200522-1446_andrew.pierce.sql" />
     <None Include="Pre-Deployment\01_Create_Database.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\GetBairdSector.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\GetContacts.sql" />
@@ -199,6 +202,7 @@
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_CamptureOuputLog.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_Cust.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_Customer.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Get_Customers.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\GET_CUST_NOTES.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_Demo.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\GET_DM_INVOICE_LINE.sql" />

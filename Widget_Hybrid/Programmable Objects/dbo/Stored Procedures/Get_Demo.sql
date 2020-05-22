@@ -9,8 +9,8 @@ GO
 CREATE PROCEDURE [dbo].[Get_Demo] AS
 BEGIN
 SELECT DemoId
-     , DemoFName
-     , DemoDescription FROM dbo.HelloDemo
+     , DemoFName,
+     DemoDescription FROM dbo.HelloDemo
 END
 
 GO
