@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -10,8 +10,7 @@
     <ProjectGuid>bb8951b0-06a8-4154-8037-f30cc652ca59</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
-    <RootPath>
-    </RootPath>
+    <RootPath></RootPath>
     <RootNamespace>Widget_Hybrid</RootNamespace>
     <AssemblyName>Widget_Hybrid</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
@@ -269,6 +268,7 @@
     <None Include="Schema-Model\dbo\Tables\WidgetPurchases.sql" />
     <None Include="Schema-Model\dbo\Tables\WidgetReferences.sql" />
     <None Include="Schema-Model\dbo\Tables\Widgets.sql" />
+    <None Include="Migrations\1.1.1\003_20200708-1127_andrew.pierce.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Post-Deployment\01_Finalize_Deployment.sql" />

@@ -11,7 +11,6 @@ AS
 BEGIN
     SELECT C.CustFirstname,
            C.CustLastname,
-           C.CustDescription,
            C.Notes
       FROM dbo.Customer AS C;
 END;
