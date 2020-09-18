@@ -10,8 +10,7 @@ CREATE   PROCEDURE [dbo].[Get_Customers]
 AS
 BEGIN
     SELECT C.CustFirstname,
-           C.CustLastname,
-           C.Notes
+           C.CustLastname
       FROM dbo.Customer AS C;
 END;
 

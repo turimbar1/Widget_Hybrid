@@ -12,10 +12,8 @@ BEGIN
     SELECT CustId,
            CustFirstname,
            Last_Changed_By,
-           CustEmailAddress,
-           LastChangedBy,
-           CustomerNotes,
-           Notes
+           CustEmailAddress
+           
     FROM dbo.Customer;
 END;
 

@@ -17,7 +17,10 @@ CREATE TABLE [dbo].[demotable]
 [ChromeUserID] [int] NULL,
 [NikeID] [int] NULL,
 [demoDate2] [datetime2] NULL,
-[AzureUserDescription] [nvarchar] (250) NULL
+[AzureUserDescription] [nvarchar] (250) NULL,
+[DemoName] [nvarchar] (25) NULL,
+[DemoName2] [nvarchar] (50) NULL,
+[LinkedIN_ID] [int] NULL
 )
 GO
 ALTER TABLE [dbo].[demotable] ADD CONSTRAINT [PK__demotabl__977B80755E2EBDD1] PRIMARY KEY CLUSTERED  ([DemoId])

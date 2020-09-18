@@ -5,8 +5,7 @@ CREATE TABLE [dbo].[WidgetPrices]
 [Price] [money] NULL,
 [ValidFrom] [datetime] NULL CONSTRAINT [DF_WidgetPrices_ValidFrom] DEFAULT (getdate()),
 [ValidTo] [datetime] NULL,
-[Active] [char] (1) NULL CONSTRAINT [DF_WidgetPrices_Active] DEFAULT ('N'),
-[Last_Modified] [datetime] NULL
+[Active] [char] (1) NULL CONSTRAINT [DF_WidgetPrices_Active] DEFAULT ('N')
 )
 GO
 ALTER TABLE [dbo].[WidgetPrices] ADD CONSTRAINT [PK_WidgetPrices] PRIMARY KEY NONCLUSTERED  ([RecordID])

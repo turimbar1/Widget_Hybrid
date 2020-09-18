@@ -35,6 +35,7 @@
     <Baselining>FolderBased</Baselining>
     <DevelopmentSource>ScriptsFolder</DevelopmentSource>
     <ScriptsFolderPath>..\..\..\Users\andrew.pierce\Documents\src\</ScriptsFolderPath>
+    <ProgrammableObjectHandling>UseRepeatableScriptsForAllObjects</ProgrammableObjectHandling>
   </PropertyGroup>
   <!-- SQL CHANGE AUTOMATION OFFLINE SCHEMA MODEL OPTIONS -->
   <PropertyGroup>
@@ -47,7 +48,6 @@
   </PropertyGroup>
   <!-- SQL CHANGE AUTOMATION PROGRAMMABLE OBJECT OPTIONS -->
   <PropertyGroup>
-    <DeployChangesForProgrammableObjects>True</DeployChangesForProgrammableObjects>
     <!--
     <DeployChangesForProgrammableObjects>True</DeployChangesForProgrammableObjects>
     <DeployChangesInitialImportDone>False</DeployChangesInitialImportDone>
@@ -269,6 +269,15 @@
     <None Include="Schema-Model\dbo\Tables\WidgetReferences.sql" />
     <None Include="Schema-Model\dbo\Tables\Widgets.sql" />
     <None Include="Migrations\1.1.1\003_20200708-1127_andrew.pierce.sql" />
+    <None Include="Migrations\1.1.1\004_20200708-1229_andrew.pierce.sql" />
+    <None Include="Migrations\1.1.1\005_20200716-1808_andrew.pierce.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Get_Assignment.sql" />
+    <None Include="Migrations\1.1.1\006_20200903-1046_andrew.pierce.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Get_Contacts.sql" />
+    <None Include="Migrations\1.1.1\007_20200918-1324_andrew.pierce.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Get_BairdSector.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Get_CREDIT_CARD_TYPE.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\usp_ssfAccount.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Post-Deployment\01_Finalize_Deployment.sql" />
