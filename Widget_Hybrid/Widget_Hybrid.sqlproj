@@ -7,7 +7,7 @@
     <Name>Widget_Hybrid</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>bb8951b0-06a8-4154-8037-f30cc652ca59</ProjectGuid>
+    <ProjectGuid>{bb8951b0-06a8-4154-8037-f30cc652ca59}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath></RootPath>
@@ -34,8 +34,9 @@
     <EvaluateExecutionOrderOnImport>True</EvaluateExecutionOrderOnImport>
     <Baselining>FolderBased</Baselining>
     <DevelopmentSource>ScriptsFolder</DevelopmentSource>
-    <ScriptsFolderPath>..\..\..\Users\andrew.pierce\Documents\src\</ScriptsFolderPath>
+    <ScriptsFolderPath>C:\Repos\WidgetState</ScriptsFolderPath>
     <ProgrammableObjectHandling>UseRepeatableScriptsForAllObjects</ProgrammableObjectHandling>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
   </PropertyGroup>
   <!-- SQL CHANGE AUTOMATION OFFLINE SCHEMA MODEL OPTIONS -->
   <PropertyGroup>
@@ -168,6 +169,13 @@
     <Folder Include="Pre-Deployment\" />
     <Folder Include="Post-Deployment\" />
     <Folder Include="Migrations\" />
+    <Folder Include="Programmable Objects\" />
+    <Folder Include="Programmable Objects\dbo\" />
+    <Folder Include="Programmable Objects\dbo\Stored Procedures\" />
+    <Folder Include="Programmable Objects\dbo\Views\" />
+    <Folder Include="Schema-Model\" />
+    <Folder Include="Schema-Model\dbo\" />
+    <Folder Include="Schema-Model\dbo\Tables\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Filter.scpf" />
@@ -278,6 +286,7 @@
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_BairdSector.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Get_CREDIT_CARD_TYPE.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\usp_ssfAccount.sql" />
+    <None Include="Migrations\1.1.1\008_20210419-1136_andrew.pierce.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Post-Deployment\01_Finalize_Deployment.sql" />

@@ -9,11 +9,10 @@ GO
 CREATE   PROCEDURE [dbo].[Get_Contacts] AS
 BEGIN
 SELECT
-    ID,
-    JoiningDate,
-    Email,
-    Description,
-    PhoneHome
+    Name,
+    PhoneWork,
+    PhoneMobile,
+    Address1
 FROM
     dbo.Contacts;
 END
